@@ -3,14 +3,14 @@ def get_num_words(text):
     return len(words)
 
 def get_num_characters(text):
-    new_dict = {}
+    num_characters = {}
     for char in text:
-        if char.lower() not in new_dict:
-            new_dict[char.lower()] = 1
+        if char.lower() not in num_characters:
+            num_characters[char.lower()] = 1
         else:
-            new_dict[char.lower()] += 1
+            num_characters[char.lower()] += 1
 
-    return new_dict
+    return num_characters
 
 def sort_on(items):
     return items["num"]
